@@ -36,3 +36,32 @@ a:hover {
 .links {
   margin-top: 0.5rem;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* for small screens */
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.header-text {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-text {
+    text-align: center;
+  }
+}
