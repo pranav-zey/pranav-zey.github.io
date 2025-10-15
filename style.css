@@ -1,29 +1,51 @@
+/* Base layout and typography */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
   padding: 1rem;
   line-height: 1.6;
   color: #333;
+  background: #fff;
 }
 
+/* Section spacing */
 header, section, footer {
   margin-bottom: 2rem;
 }
 
+/* Header: photo left, text right */
+.header-container {
+  display: flex;
+  align-items: center;     /* vertically center photo & text */
+  gap: 1.25rem;            /* spacing between photo and text */
+  flex-wrap: nowrap;       /* keep side-by-side on desktops */
+}
+
+/* Profile photo */
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
-  margin: 0 auto 1rem;
+  flex-shrink: 0;          /* prevent the photo from shrinking too much */
+  box-shadow: 0 6px 14px rgba(10,10,10,0.06);
 }
 
-h1, h2 {
-  color: #1a1a1a;
+/* Header text area */
+.header-text {
+  flex: 1;
 }
 
+/* Subtitle smaller text */
+.subtitle {
+  margin-top: 0.1rem;
+  margin-bottom: 0.6rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Links styling */
 a {
   color: #007acc;
   text-decoration: none;
@@ -35,31 +57,21 @@ a:hover {
 
 .links {
   margin-top: 0.5rem;
+  font-size: 0.95rem;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap; /* for small screens */
+/* Headings */
+h1, h2 {
+  color: #1a1a1a;
+  margin: 0;
 }
 
-.profile-photo {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.header-text {
-  flex: 1;
-}
-
+/* Mobile: stack vertical */
 @media (max-width: 600px) {
   .header-container {
     flex-direction: column;
     text-align: center;
+    gap: 0.75rem;
   }
   .header-text {
     text-align: center;
