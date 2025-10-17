@@ -21,7 +21,8 @@
         <div class="links">
           <a href="mailto:pranav.joshi.1001@gmail.com">Email</a> |
           <a href="https://github.com/pranav-zey">GitHub</a> |
-          <a href="https://www.linkedin.com/in/pranav-joshi-287704294/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/pranav-joshi-287704294/">LinkedIn</a> |
+          <a href="assets/Pranav_Joshi_CV.pdf" download="Pranav_Joshi_CV.pdf" class="cv-download">Download CV</a>
         </div>
       </div>
     </div>
@@ -30,31 +31,177 @@
   <main>
     <section id="about">
       <h2>About</h2>
-      <p>Firmware developer and embedded systems researcher with a focus on FPGA-based acceleration and intelligent edge devices.</p>
+      <p>I am seeking post-graduate academic research positions to contribute to innovative research at the intersection of embedded systems development and intelligent edge devices. My work focuses on hardware acceleration, image processing, and firmware development for embedded platforms.</p>
+      <div class="test-scores">
+        <span><strong>TOEFL:</strong> 117/120</span>
+        <span><strong>GRE:</strong> 330/340 (170Q, 160V, 4.5AWA)</span>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div class="edu-header">
+          <h3>Bachelors in Engineering - Electronics, Communication and Information</h3>
+          <span class="date">April 2021 - April 2025</span>
+        </div>
+        <p class="institution">Pulchowk Campus, Institute of Engineering, Tribhuvan University</p>
+        <p class="grade">Distinction | Aggregate: 81.24% (Top 10%)</p>
+      </div>
+      <div class="edu-item">
+        <div class="edu-header">
+          <h3>High School - Plus Two in Science</h3>
+          <span class="date">June 2018 - May 2020</span>
+        </div>
+        <p class="institution">Saint Xavier's College, Maitighar</p>
+        <p class="grade">A+ | GPA: 3.79/4 (Top 10%)</p>
+      </div>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
-      <ul>
-        <li><strong>Firmware Programmer</strong>, Real Time Solutions (2025–Present)</li>
-        <li><strong>Research Assistant</strong>, EDMES Lab (2025)</li>
-        <li><strong>Research Intern</strong>, Kathmandu Institute of Applied Sciences (2024)</li>
-      </ul>
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>Firmware Programmer</h3>
+          <span class="date">August 2025 - Present</span>
+        </div>
+        <p class="company">Real Time Solutions Pvt. Ltd. | On-Site, Full-Time</p>
+        <p>Working in the R&D wing on production-ready serial peripheral drivers with both blocking and real-time implementations. Currently refactoring the codebase for energy efficiency, targeting reduction in MCU current consumption from 180 μA/MHz to 45 μA/MHz.</p>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>Research Assistant</h3>
+          <span class="date">May 2025 - July 2025</span>
+        </div>
+        <p class="company">EDMES Lab, DoECE, Pulchowk Campus | Hybrid, Full-Time</p>
+        <p>Worked under Asst. Prof. Nishchal Acharya and visiting scholar Prof. Atsushi Ito (Chuo University, Japan). Conducted extensive literature review and methodology improvement, achieving 2% mIoU improvement from baseline model. Co-authored two research manuscripts.</p>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>Research Intern</h3>
+          <span class="date">September 2024 - December 2024</span>
+        </div>
+        <p class="company">Kathmandu Institute of Applied Sciences | Remote, Part-Time</p>
+        <p>Ported legacy Arduino-based codebase to STM32 Blue Pill system. Interfaced multiple analog sensors across a single ADC channel and established serial communication between two Raspberry Pi Pico microcontrollers for distributed sensor reading and weather data logging.</p>
+      </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/pranav-zey/major-project">FPGA-based Semantic Segmentation</a></li>
-        <li><a href="https://github.com/pranav-zey/weather_station">Weather Station</a></li>
-        <li><a href="https://github.com/pranav-zey/minor_project_robotic_arm">4-DoF Robotic Arm</a></li>
-      </ul>
+      <h2>Selected Projects</h2>
+      <div class="project-item">
+        <div class="project-header">
+          <h3>RTK, GDPS, LiDAR Research</h3>
+          <span class="date">August 2025 - Present</span>
+        </div>
+        <p class="project-org">R&D Wing, Real Time Solutions</p>
+        <p class="tech-stack">C99, EFM32GG980 (Cortex-M3), Energy Modes, I2C, UART, PPP, RTOS, GitLab</p>
+        <p>Developed BARR-C compliant C99 firmware drivers for EFM32GG980F1024-based board with LidarLite v3 and ST7036i (I2C). Built an M2M server on in-board MODEM over PPP (UART). Implemented in both bare-metal and FreeRTOS approaches.</p>
+      </div>
+      <div class="project-item">
+        <div class="project-header">
+          <h3>Final Year Capstone: Semantic Segmentation on FPGA</h3>
+          <span class="date">May 2024 - April 2025</span>
+        </div>
+        <p class="project-org">DoECE, Pulchowk Campus</p>
+        <p class="tech-stack">PyTorch, Kria KR260 MPSoC, Vitis-AI, Docker, VIVADO, Linux</p>
+        <p>Developed novel ReLUKAN-based convolutions in SwiftNet architecture encoder and implemented the network on the Xilinx Kria KR260 MPSoC FPGA board. Retained 70% mIoU while halving parameters from 5.68M to 2.99M. <a href="https://github.com/pranav-zey/major-project">View Project</a></p>
+      </div>
+      <div class="project-item">
+        <div class="project-header">
+          <h3>Low Cost Meteorological Station</h3>
+          <span class="date">September 2024 - December 2024</span>
+        </div>
+        <p class="project-org">Kathmandu Institute of Applied Sciences</p>
+        <p class="tech-stack">STM32F030C8T6, ADC, Raspberry Pi Pico RP2040, C/C++ SDK, Cortex-M0+, NVIC</p>
+        <p>Interfaced wind vane, cup anemometer, and rain gauge across a single ADC channel of STM32F030C8T6 with both polling and interrupt-based methods. Programmed interrupt-based UART transmission between two RP2040s with FreeRTOS-based sender. <a href="https://github.com/pranav-zey/weather_station">View Project</a></p>
+      </div>
+      <div class="project-item">
+        <div class="project-header">
+          <h3>4-DoF Robotic Arm</h3>
+          <span class="date">November 2023 - March 2024</span>
+        </div>
+        <p class="project-org">DoECE, Pulchowk Campus</p>
+        <p class="tech-stack">Raspberry Pi Pico RP2040, MicroPython, Forward and Inverse Kinematics</p>
+        <p>Manually controlled robotic arm with analog input de-bouncing and DH-based inverse kinematics solution (analytical and numerical). Achieved robust control with only 0.58 cm deviation in validation plots. <a href="https://github.com/pranav-zey/minor_project_robotic_arm">View Project</a></p>
+      </div>
     </section>
 
     <section id="publications">
       <h2>Publications</h2>
-      <p><em>Lightweight and Efficient Semantic Segmentation Model for FPGA-based Acceleration</em>, IEEE EdgeCom 2025</p>
-      <p><em>Convolutions with Kolmogorov-Arnold Networks based ReLUKAN Activation in Residual Networks for Semantic Segmentation</em>, In Preparation</p>
+      <div class="pub-item">
+        <p class="pub-title">Lightweight and Efficient Semantic Segmentation Model for FPGA-based Acceleration</p>
+        <p class="pub-venue">The 11th IEEE International Conference on Edge Computing and Scalable Cloud (IEEE EdgeCom), 2025</p>
+        <p class="pub-status">Accepted</p>
+      </div>
+      <div class="pub-item">
+        <p class="pub-title">Convolutions with Kolmogorov-Arnold Networks based ReLUKAN Activation in Residual Networks for Semantic Segmentation</p>
+        <p class="pub-venue">EDMES Lab, Department of Electronics and Computer Engineering, Pulchowk Campus</p>
+        <p class="pub-status">Under Internal Review</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Programming</h4>
+          <p>Python, C, C++, Verilog, VHDL, MATLAB, GNU Octave, Bash Scripting, Makefiles</p>
+        </div>
+        <div class="skill-category">
+          <h4>Microcontroller Boards</h4>
+          <p>EFM32, ESP32, Raspberry Pi Pico, STM32, 8051, Arduino</p>
+        </div>
+        <div class="skill-category">
+          <h4>Development Tools</h4>
+          <p>VS Code, C/C++ SDKs, Keil, Eclipse IDE, Thonny, Jupyter Notebooks, Google Colab</p>
+        </div>
+        <div class="skill-category">
+          <h4>ML & Data Science</h4>
+          <p>NumPy, Matplotlib, Scikit-Learn, Keras, TensorFlow, PyTorch, OpenCV, Vitis-AI</p>
+        </div>
+        <div class="skill-category">
+          <h4>Hardware & Lab</h4>
+          <p>Oscilloscopes, Logic Analyzers, Multimeters, Breadboards, Antennas, Transistors, Op-Amps</p>
+        </div>
+        <div class="skill-category">
+          <h4>Version Control</h4>
+          <p>Git, GitLab with CI/CD, GitHub</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements & Leadership</h2>
+      <div class="achievement-item">
+        <h4>Content Lead and Research Executive - LOCUS</h4>
+        <span class="date">May 2024 - March 2025</span>
+        <ul>
+          <li>Led publication team as chief author and editor for LOCUS 2025 Official Theme</li>
+          <li>Co-founded the first LOCUS Research Collegiate and organized inaugural LOCUS Research Symposium</li>
+          <li>Presented theme at government ministerial offices</li>
+          <li>Led Hardware Fellowship-2025, training over 200 first-year engineering students</li>
+          <li>Procured sponsorships exceeding $2000 for the main exhibition</li>
+        </ul>
+      </div>
+      <div class="achievement-item">
+        <h4>Academic Excellence</h4>
+        <ul>
+          <li>Full-Fee Topper Scholarship 2024, Tribhuvan University</li>
+          <li>Stipend for Academic Excellence (Top 20% in all eight semesters), 2021-2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>Machine Learning Specialization - Stanford Online | DeepLearning.AI</li>
+        <li>Convolutional Neural Networks - Stanford Online | DeepLearning.AI</li>
+        <li>Sequence Models - Stanford Online | DeepLearning.AI</li>
+        <li>VLSI CAD Part I - Logic - University of Illinois Urbana Champaign</li>
+        <li>CUBEEK CubeSat Training - Orion Space Nepal</li>
+        <li>Multiple Kaggle Certifications (Python, ML, Pandas, Deep Learning, Data Cleaning)</li>
+      </ul>
     </section>
   </main>
 
